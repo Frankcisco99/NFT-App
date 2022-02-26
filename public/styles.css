@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.header{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 150px;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    
+}
+.card{
+    height: 550px;
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
+.nftView{
+    width: 250px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.profilePic{
+    width: 32px;
+    height: 32px;
+}
+
+.description{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.btnAdd{
+    width: 180px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(31, 255, 61);
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btnRem{
+    width: 180px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    cursor: pointer;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+}
+
+.price{
+    display: flex;
+    gap: 5px;
+}
+
+.price p{
+    color: aqua;
+}
+
+.days{
+    display: flex;
+    gap: 5px;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.cartSystem{
+    display: flex;
+    align-items:flex-end;
+    color: white;
+    position: relative;
+}
+
+.shopping-cart{
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.notify{
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: rgb(240, 25, 25);
+    position: absolute;
+    top: 28px;
+    left: 35px;
+}
+@media screen and (max-width: 800px) and (min-width: 520px) {
+    .header{
+        font-size: 100px;
+    }
+    .app{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) and (min-width: 200px) {
+    .header{
+        font-size: 50px;
+    }
+    .app{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
